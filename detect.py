@@ -50,8 +50,8 @@ cap.set(cv2.CAP_PROP_FRAME_WIDTH,800)
 cap.set(cv2.CAP_PROP_FRAME_HEIGHT,600)
 
 # Define the codec and create VideoWriter object
-fourcc = cv2.VideoWriter_fourcc('M','J','P','G')
-out = cv2.VideoWriter('output.avi', fourcc, 15.0, (800, 600))
+fourcc = cv2.VideoWriter_fourcc('m','p','4','v')
+out = cv2.VideoWriter('output.mp4', fourcc, 15.0, (800, 600))
 
 print("press \'q\' to quit")
 while(True):
