@@ -37,12 +37,12 @@ def adjust_camera_settings(brightness, contrast, saturation):
         subprocess.run(['v4l2-ctl','-d','/dev/video1', '-c', 'brightness=-10'])
 
     if contrast == 1:
-        subprocess.run(['v4l2-ctl', '-c', 'contrast=+5'])
+        subprocess.run(['v4l2-ctl','-d','/dev/video1', '-c', 'contrast=+5'])
     elif contrast == 2:
         pass  # Do nothing
     
     if saturation == 1:
-        subprocess.run(['v4l2-ctl', '-c', 'saturation=+5'])
+        subprocess.run(['v4l2-ctl','-d','/dev/video1', '-c', 'saturation=+5'])
     elif saturation == 2:
         pass
 

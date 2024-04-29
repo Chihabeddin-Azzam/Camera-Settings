@@ -70,8 +70,8 @@ while(True):
 
  out.write(frame)
  cv2.waitKey(1)
- #if keyboard.is_pressed('q'):
-  #break
+ if cv2.waitKey(1) & 0xFF == ord('q'):
+  break
 
 cap.release()
 out.release()
