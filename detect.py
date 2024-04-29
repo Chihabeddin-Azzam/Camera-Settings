@@ -5,7 +5,7 @@ import keyboard
 
 def check_brightness(image):
  avg_intensity = np.mean(image)
- if avg_intensity < 100:  # Adjust threshold as needed
+ if avg_intensity < 150:  # Adjust threshold as needed
   return 1
  elif avg_intensity > 200:  # Adjust threshold as needed
   return 2
